@@ -1,0 +1,158 @@
+body {
+    background-color: #fdebf8;
+    color: black;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: Geist;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    width: max-content;
+}
+
+*{
+    margin:0;
+    padding:0 ;
+    /* line-height: 1.5 !important; */
+}
+
+h1 {
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+
+h2{
+color: #4d4d4d;
+margin: 5px 0px 20px 0px;
+}
+main{
+    padding:10px;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.buttons button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border:solid 1px white;
+}
+
+.buttons button#sign{
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    align-items: center;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+}
+div.cards{
+   display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+   gap:20px;
+   justify-items: center;
+   /* max-width: 1000px; */
+   margin: 0px auto;
+  
+}
+
+div.card{
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    color:purple;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    font-weight: 500;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: transform ease-in-out 0.5s;
+}
+
+div.card:hover{
+    transform: scale(95%);
+}
+
+div.card h3{
+    font-size: larger;
+}
+
+form{
+    margin: 10px;
+}
+
+input{
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px black;
+    margin-bottom: 10px;
+    display: block;
+}
+
+div#loginCard{
+    border-radius: 20px;
+    border: solid 2px #c1c1c1;
+    padding: 10px;
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 0 !important;
+    width: 100%;
+    align-items: stretch;
+    border: none !important;
+    margin-bottom: 10px;
+}
+
+label{
+    font-weight: 500;
+    font-size: 17px;
+}
+input{
+    padding: 10px 12px;
+    border: solid 1px #4d4d4d;
+    outline: none;
+    border-radius: 10px;
+}
+section#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loginCard h4{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: purple;
+    letter-spacing: 4px;
+}
+h5{
+    margin: 5px auto;
+    text-align: center;
+}
