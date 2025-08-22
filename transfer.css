@@ -1,0 +1,114 @@
+body{
+  background: yellowgreen;
+  color: black;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: Geist;
+}
+
+h1 {
+  font-size: xx-large;
+  text-align: center;
+}
+
+div#title{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+h1{
+  font-size: large;
+}
+
+h1,h3,h2,h5,p{
+  line-height: 1.5;
+}
+
+div.card{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 10px auto;
+  color:#4d4d4d;
+  width:70%;
+  min-width: 250px;
+  max-width: 550px;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  gap:7px;
+  border:none;
+  outline:none;
+}
+
+input {
+  display: block;
+  padding: 0.75rem 0.75rem;
+  border-radius: 6px;
+  border: solid 1.5px rgb(224, 222, 224);
+  outline: none;
+  width: 100%;
+}
+
+div.cardTitleWrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:6px;
+  margin:10px auto;
+}
+
+div.buttons{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+div.buttons button{
+  flex:1;
+  background: #94BBE9;
+  font-weight: 600;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+
+div.buttons button:first-of-type{
+  background-color: transparent;
+  border:solid 1px #4d4d4d;
+  color:#4d4d4d;
+}
+
+div.buttons button:last-of-type{
+  background-color: red;
+  color:white;
+}
+
+div.currency{
+  padding: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+  font-size: large;
+  background-color: rgba(196, 86, 105, 0.18);
+}

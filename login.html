@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-        <link rel="stylesheet" href="login.css" />
-
-</head>
-<body>
+    <link rel="stylesheet" href="login.css" />
+    <script defer type="module" src="login.mjs"></script>
+  </head>
+  <body>
     <div class="loginCard">
-        <h4>Login</h4>
-        <hr>
-        <form id="login">
-          <h2>Log In</h2>
-          <input type="text" placeholder="ID No" />
-          <input type="text" placeholder="Pin" />
-          <button type="submit">Log In</button>
-        </form>
-     
+      <h2>🏦 Shirley's Bank</h2>
+      <h4>👋 Hello, Welcome Back</h4>
+      <hr />
+      <form id="login">
+        <input type="number" placeholder="ID No" id="idNo"/>
+        <input type="number" placeholder="Pin" id="pin" />
+        <button type="submit">Log In</button>
+      </form>
     </div>
-        <script src="login.js"></script>
-
-</body>
+  </body>
 </html>

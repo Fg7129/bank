@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transfer</title>
-</head>
-<body>
-    Transfer
-</body>
+     <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer type="module" src="transfer.mjs"></script>
+    <link rel="stylesheet" href="transfer.css" />
+  </head>
+  <body>
+    <div id="title">
+      <h4>Enter the amount you want to Transfer</h4>
+    </div>
+    <div class="card">
+      <div class="cardTitleWrapper">
+        <div class="currency">$</div>
+        <h2>Transfer Funds</h2>
+        <h5>Available Balance: <span id="balance"></span></h5>
+      </div>
+      <form id="transfer">
+        <fieldset>
+          <label for="amount">Amount to Transfer</label>
+          <input required min="1" type="number" placeholder="0.00" id="amount" name="amount" />
+        </fieldset>
+
+        <fieldset>
+          <label for="amount">Recipient</label>
+          <input required min="1" type="text" placeholder="Recipient" id="recip" name="recip" />
+        </fieldset>
+
+        <fieldset>
+          <label for="pin">Enter PIN</label>
+          <input required type="password" placeholder="****" id="pin" name="pin" />
+        </fieldset>
+        <div class="buttons">
+          <button id="cancel" type="button">Cancel</button>
+          <button type="submit">Transfer Money</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

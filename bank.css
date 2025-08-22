@@ -1,158 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background-color: #fdebf8;
-    color: black;
-    margin: 0 !important;
-    padding: 0 !important;
-    font-family: Geist;
+  /* background: #eeaeca; */
+  background: #181e5f;
+  color: black;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: Geist;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-    width: max-content;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 17.5px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-*{
-    margin:0;
-    padding:0 ;
-    /* line-height: 1.5 !important; */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div.midCards a{
+  flex:1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* line-height: 1.5 !important; */
 }
 
 h1 {
-    text-align: center;
-    font-size: larger;
-    color: white;
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  color: white;
 }
 
-h2{
-color: #4d4d4d;
-margin: 5px 0px 20px 0px;
+div#greetings {
+  /* margin:10px 0; */
+  display: flex;
+  gap: 3px;
+  flex-direction: column;
 }
-main{
-    padding:10px;
-}
-.buttons{
-    display: flex;
-    gap: 5px;
-    align-items: center;
+div#greetings p {
+  color: white;
 }
 
-.buttons button{
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    border:solid 1px white;
+h2#time {
+  color: white;
+}
+main {
+  padding: 10px;
+}
+.buttons {
+  display: flex;
+  gap: 5px;
+  flex: 1;
+  justify-content: end;
+  align-items: center;
 }
 
-.buttons button#sign{
-    background-color: green;
-    color: white;
-    border: none;
+.buttons button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: solid 1px white;
 }
 
-#nav{
-    display: flex;
-    justify-content: space-between;
-    gap: 3px;
-    align-items: center;
-    background-color: purple;
-    color: white;
-    padding: 10px;
-}
-div.cards{
-   display: grid;
-grid-template-columns: repeat(3, minmax(0, 1fr));
-   gap:20px;
-   justify-items: center;
-   /* max-width: 1000px; */
-   margin: 0px auto;
-  
+.buttons button#sign {
+  background-color: green;
+  color: white;
+  border: none;
 }
 
-div.card{
-    border-radius: 20px;
-    padding: 20px;
-    width: 250px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    height: 250px;
-    background-color: rgb(255, 255, 255);
-    color:purple;
-    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    font-weight: 500;
-    display: flex;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    transition: transform ease-in-out 0.5s;
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+  align-items: center;
+  color: white;
+  padding: 10px;
 }
 
-div.card:hover{
-    transform: scale(95%);
+div.card {
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+    0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-div.card h3{
-    font-size: larger;
+div.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-form{
-    margin: 10px;
+div.topCard div.card h2 {
+  color: rgb(19, 160, 19);
+  font-weight: bold;
 }
 
-input{
-    padding: 5px;
-    border-radius: 10px;
-    border: solid 1px black;
-    margin-bottom: 10px;
-    display: block;
+p {
+  color: #4d4d4d;
+  font-size: medium;
 }
 
-div#loginCard{
-    border-radius: 20px;
-    border: solid 2px #c1c1c1;
-    padding: 10px;
-    width: 90%;
-    max-width: 600px;
-    background-color: white;
+div.midCards,
+div.bottomCards {
+  display: flex;
+  gap: 10px;
+  /* flex-wrap:wrap; */
+  justify-content: center;
+  align-items: center;
 }
 
-fieldset{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    margin: 0 !important;
-    width: 100%;
-    align-items: stretch;
-    border: none !important;
-    margin-bottom: 10px;
+div.midcards div.card {
+  cursor: pointer; 
 }
 
-label{
-    font-weight: 500;
-    font-size: 17px;
+div#userBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  color:white;
 }
-input{
-    padding: 10px 12px;
-    border: solid 1px #4d4d4d;
-    outline: none;
-    border-radius: 10px;
+
+nav p{
+  color:white
 }
-section#login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+#userBtns button {
+  background-color: oklch(0.577 0.245 27.325);
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border: none;
+  border-radius: 6px;
 }
-#loginCard h4{
-    text-align: center;
-    margin: 10px auto;
-    font-size: 20px;
-    font-weight: 600;
-    color: purple;
-    letter-spacing: 4px;
+
+#pic img {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
 }
-h5{
-    margin: 5px auto;
-    text-align: center;
+div.centerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+div.centerWrapper div.icon {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color:rgba(236, 172, 183, 0.479);
 }
