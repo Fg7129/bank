@@ -1,3 +1,5 @@
+import { users } from "./bank.mjs";
+
 let user;
 let account;
 let accounts;
@@ -8,6 +10,7 @@ const onCancelBtnEvent = cancelButton.addEventListener("click", () => {
 });
 const amountEl = document.getElementById("amount");
 const pinEl = document.getElementById("pin");
+const recipientEl=document.getElementById("recipient")
 const formEl = document.getElementById("transfer");
 const onSubmitEvent = formEl.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -21,11 +24,12 @@ const onSubmitEvent = formEl.addEventListener("submit", (e) => {
     alert("Pin cannot be empty");
     return;
   }
-  withdraw(amount, pin);
+  transfer(amount, pin);
 });
 
-function withdraw(amount, pin) {
+function transfer(amount, pin) {
   console.log("entered pin:", pin, "user pin:", user.pin);
+
   if (user.pin != pin) {
     alert("Invalid pin provided!");
   } else {
@@ -47,6 +51,28 @@ function withdraw(amount, pin) {
       alert("Transfer successful");
       amountEl.value = "";
       pinEl.value = "";
+
+       localStorage.setItem("accounts", JSON.stringify(oldAccounts));
+      const response =  fetch("recipient", {
+    if (users = recipientEl){
+let recipientAccount = accounts.find(acc => acc.userid == recipientEl);
+
+if (recipientAccount) {
+    recipientAccount.balance = +recipientAccount.balance + +amount;
+
+    oldAccounts.push(recipientAccount);
+    localStorage.setItem("accounts", JSON.stringify(oldAccounts));
+
+    alert("Transfer successful to recipient!");
+} else {
+    alert("Recipient not found!");
+}
+    }
+    
+  });
+
+  const result =  response.json();
+  console.log("Transfer result:", result);
     }
   }
 }

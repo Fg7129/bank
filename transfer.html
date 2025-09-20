@@ -23,13 +23,16 @@
       </div>
       <form id="transfer">
         <fieldset>
+          <label for="recipient">Recipient</label>
+          <select required min="1" type="text" placeholder="Recipient" id="recipient" name="recipient" id="recipient" >
+            <option value="16">Kris</option>
+            <option value="15">Ralsei</option>
+
+          </select>
+        <fieldset>
           <label for="amount">Amount to Transfer</label>
           <input required min="1" type="number" placeholder="0.00" id="amount" name="amount" />
         </fieldset>
-
-        <fieldset>
-          <label for="amount">Recipient</label>
-          <input required min="1" type="text" placeholder="Recipient" id="recip" name="recip" />
         </fieldset>
 
         <fieldset>
