@@ -4,7 +4,7 @@ let accounts;
 const balanceEl = document.getElementById("balance");
 const cancelButton = document.getElementById("cancel");
 const onCancelBtnEvent = cancelButton.addEventListener("click", () => {
-  window.location.replace("bank.html");
+  window.location.replace("index.html");
 });
 const amountEl = document.getElementById("amount");
 const pinEl = document.getElementById("pin");

@@ -40,13 +40,13 @@ function usercheck(idNum, pinNo) {
   } else {
     const userToStore = JSON.stringify(user);
     localStorage.setItem("user", userToStore);
-    window.location.href = "bank.html";
+    window.location.href = "index.html";
   }
 }
 
 function isLoggedIn() {
   const user = localStorage.getItem("user");
   if(user){
-    window.location.replace("bank.html")
+    window.location.replace("index.html")
   }
 }
